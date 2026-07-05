@@ -26,204 +26,250 @@
     font-family: 'veneza';
     src: url('VenezaDEMO-Regular.ttf') format("truetype");
 }
-.top_icons
+@font-face {
+    font-family: 'spicy';
+    src: url('Spicy\ Sale.ttf') format("truetype");
+}
+
+body
 {
-    height: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    font-family: oswald;
+}
+
+.header
+{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.top_links
+{
+    list-style: none;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    gap: 1.5rem;
-    padding: 1rem 1rem 0 0;
-    color:	#64686d;
-    font-size: 1.22rem;
-    font-weight: bolder;
-    font-family: flair;
-}
-.hide_top_icons
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    gap: 0.75rem;
-    padding: 1rem 1rem 0 0;
-    color:	#64686d;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: flair;
+    gap: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 1rem 0 1rem;
 }
 
-@media(max_width:600px)
+.top_links i
 {
-
+ font-size: 2rem;
+ color:#358cee;
 }
 
-.hidden
+.top_links a
 {
-    display: none;
-}
-.btn_top
-{
-    border: none;
-    
-}
-.face_icon
-{
- font-size: 2.5rem;
- margin: 1.25rem 0 0 1rem;
- color: #64686d;
-}
-.user_icon
-{
-    display: flex;
-    gap: 0.5rem;
-}
-.face_icon_text
-{
-    font-family: flair;
-}
-header
-{
-    min-height: 3rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#dev
-{
-    color: rgb(39, 184, 184);
-}
-
-#skill_words
-{
-padding-left: 0.5rem ;
-font-family: oswald;
-letter-spacing: 0.05rem;
+    color:#0077ff;
+    text-decoration: none;
+    font-size: 1.25rem;
 }
 
 #main
 {
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    background:linear-gradient(135deg, #0077ff 0% 10%, #00c6ff 40% 100%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
 }
 
+#main h1
+{
+    color: #fff;
+}
+
+#main p
+{
+    font-size: 2rem;
+    font-weight: bolder;
+    align-items: center;
+}
+
+#main p span 
+{
+    color: #ffdd00;
+}
+
+.main_btn
+{
+    display: flex;
+    gap: 2rem;
+}
 .btn_bottom
 {
- font-family: nohemi;
-font-size: 1.5rem;
-letter-spacing: 0.09rem;
- border-radius: 0.5rem;
- border: 0.05rem ;
- background-color: rgb(227, 238, 241);
- padding: 0.5em;
- color: #457397;
-}
-
-.bottom_part
-{
-margin-top: 4rem;
-display: flex;
-justify-content: center;
-align-items: center;
-justify-content: space-evenly;
-gap: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    margin-top: 6rem;
+    font-weight: 200;
+    font-family:spicy;
+    letter-spacing: 0.05rem;
+    color: #16687e;
 }
 
 .btn_bottom:hover
 {
-background-color: 	#457397;
-color: 	#efefef;
+ background-color: #16687e;
+ color: white;
+ transition: transform 0.3s;
+ transform: scale(1.05);
 }
-section
-{
- min-height: 100vh;
-}
-#main
-{
- background-color: 	#cfe1ec;
 
-  min-height: 100vh;
+.section
+{
+min-height: 105vh;
 }
 
 #about
 {
-    background-color: #dfe1ec;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      justify-content: space-evenly;
+    font-family: veneza;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+    background: linear-gradient(135deg,#c2e59c 0% 20%,#64b3f4 60% 100%);
+    color: #333333;
+    justify-content: space-around;
+}
+
+footer
+{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.lang
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill
+{   
+    border-radius: 0.75rem;
+    border: 0.25rem solid #447c9e;
+    background-color:#00c9ff;
+    color: black;
+    padding: 0.5rem;
+    margin-left: 0.75rem;
+    font-family: spicy;
+    font-weight: 300;
+}
+
+.skill:hover
+{
+ animation: grow 1s forwards;
+}
+.skill
+{
+ animation: shrink 1s forwards;
+}
+
+@keyframes grow
+{
+    from{transform: scale(1);}
+    to{transform: scale(1.25);}
+}
+
+@keyframes shrink
+{
+    from{transform: scale(1.25);}
+    to{transform: scale(1);}
+}
+
+.work
+{
+    display: flex;
+   flex-direction: column;
+}
+.work a
+{
+    text-decoration: none;
+    color:#001f3f;
 }
 
 #services
 {
-   background-color: #a9c7e8;
-     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: veneza;
+    color: #444444;
+    background: linear-gradient(135deg,#4ca1af 0% 5%,#c4e0e5 20% 100%);
+}
+
+.serv
+{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 3.125rem;
+ align-items: center;
+}
+
+.work
+{
+ width: 12.5rem;
+ padding: 1.25;
+ border: 0.125rem solid black;
+ text-align: center;
+ border-radius: 0.75rem;
+ font-size: 1.5rem;
+ font-weight: 300;
+ font-family: spicy;
+ background: linear-gradient(135deg,#c0c0aa,#1cefff);
+}
+
+.work:hover
+{
+animation: grow 1s forwards;
+}
+
+.work
+{
+    animation: shrink 1s forwards;
+}
+
+@keyframes grow
+{
+ from{transform: scale(1);}
+ to{transform: scale(1.05);}
+}
+
+@keyframes shrink
+{
+   from{transform: scale(1.05);}
+   to{transform: scale(1);}
 }
 
 #contact
 {
-  background-color: #c4d9db;
-    min-height: 100vh;
-}
-a
-{
- text-decoration: none;
- color: #64686d;
-}
-.box
-{
-    height: 20vh;
-    background-color: #efefef;
-    width: 90vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-family: augi;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #bebebe;
+    min-height: 90vh;
 }
 
-.notes
+.detail
 {
-    font-family: playfair;
-}
-#services
-{
-   padding-top: 2rem;
-   padding-left: 2rem;
-   padding-bottom: 2rem;
-}
-
-.service_notes
-{
-    padding-top: 2rem;
-}
-.s_head
-{
-    font-family: oswald;
-    font-size: 1.5rem;
-}
-.s_main_head
-{
-   font-size: 2rem;
-   font-family: mirano;
-}
-pre
-{
-font-family: veneza;
-}
-.contact_notes
-{
-    padding: 15rem 0 0 10rem;
-}
-.c_head
-{
-    font-size: 2rem;
-    font-family: mirano;
-}
-.s_icon
-{
-    font-size: 2rem;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+font-size: 1.5em;
 }
