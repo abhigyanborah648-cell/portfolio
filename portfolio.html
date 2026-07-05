@@ -5,84 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="top_icons ">
-            <a href="#about" class="about icons topicon">About</a>
-            <a href="#services" class="services icons topicon">Services</a>
-            <a href="#contact" class="contact icons topicon">Contact</a>
-            <button class="btn_top hidden">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
-        <div class="hide_top_icons hidden">
-            <div class="about icons ">About</div>
-            <div class="services icons ">Services</div>
-            <div class="contact icons ">Contact</div>
-        </div>
+    <header class="header">
+        <nav class="top_links">
+         <i class="fa-solid fa-circle-user face_icon"></i>
+        <ul class="top_links">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
     </header>
-    <section id="main">
-        <div class="user_icon">
-            <i class="fa-solid fa-circle-user face_icon"></i>
-            <p class="face_icon_text">Hi,i am Paul borah</p>
-        </div>
-        <div class="skill_main">
-            <p id="skill_words">I,m into Web <span id="dev">Develop</span></p>
-        </div>
-        <div class="bottom_part">
-            <button id="hire" class="btn_bottom">Hire me</button>
-            <button id="talk" class="btn_bottom">Let's Talk</button>
+
+    <section id="main" class="section">
+            <h1>Hi ,I am <span>Abhigyan borah</span></h1>
+            <p>I,m into Web <span>Dev <i class="fa-solid fa-code"></i></span></p>
+        <div class="main_btn">
+            <button class="btn_bottom">Hire me</button>
+            <button class="btn_bottom">Let's Talk</button>
         </div>
     </section>
 
-    <section id="about">
-        <div class="skill box">
-            <p>skills
-            <pre class="skill_notes notes">: frontend -> html,css,javascript
-: programming -> javascript ,c ,c++ </pre>
-            </p>
+    <section id="about" class="section">
+     <h2>About Me</h2>
+     <div>
+        <div class="lang">
+            <h3>Frontend:</h3>
+           <div class="skill">Html,</div>
+           <div class="skill">CSS,</div>
+           <div class="skill">java</div>
         </div>
-        <div class="education box">
-            <p>education
-            <pre class="edu_notes notes">B.tech -> Electrical Engineering,
-           Assam Engineering College</pre>
-            </p>
+        <div class="lang">
+            <h3>Programming Lang:</h3>
+            <div class="skill">C++,</div>
+            <div class="skill">C</div>
         </div>
+     </div>
     </section>
 
-    <section id="services">
-        <p class="services-">
-        <div class="s_head s_main_head">services: </div>
-        <pre
-            class="works service_notes"><span class="work s_head">Works:</span>       served at amazon,google,
-                                 currently working with telegram</pre>
-        <pre
-            class="intership service_notes"><span class="intership s_head">Interships:</span>      work in apple,microsoft,cloudflare</pre>
-        <pre class="projects service_notes"><span class="projects s_head">Projects:</span>         -> Amazon clone     <a href="">view site</a>
-                                           -> Google clone           <a href="">view site</a>
-                                           -> Chat GPT clone   <a href="">view site</a>
-        </pre>
-        </p>
+    <section id="services" class="section">
+        <h1>Projects:</h1>
+       <div class="serv">
+        <div class="work"><div><i class="fa-brands fa-amazon"></i> Clone</div><a href="https://www.amazon.in">view</a></div>
+        <div class="work"><div><i class="fa-brands fa-google"></i> Clone</div> <a href="">view</a></div>
+        <div class="work"><div><i class="fa-brands fa-openai"></i> Clone</div><a href="">view</a></div>
+        <div class="work"><div><i class="fa-brands fa-telegram"></i> Clone</div><a href="">view</a></div>
+       </div>
+       <h1>Services:</h1>
+       <div class="serv">
+        <div class="work">Microsoft</div>
+        <div class="work">Amazon</div>
+        <div class="work">Google</div>
+       </div>
     </section>
-
-
 
     <section id="contact">
-        <div class="contact_notes"><span class="c_head">Contact Details:</span>
-            <pre><span class="email">Email:</span> abhiyanborah@gamil.com</pre>
-            <pre><span class="phone">Ph:</span>6000******</pre>
-            <pre><span class="social_media">Social Media:</span>  @    <span class="s_icon"><i class="fa-brands fa-instagram"></i></span>      >    <span class="u_name">agb</span>
-                                                       @    <span class="s_icon"><i class="fa-brands fa-facebook"></i></span>     >    <span class="u_name">paul_borah</span>
-                                                       @    <span class="s_icon"><i class="fa-brands fa-telegram"></i></span>     >    <span class="u_name">abhi_borah</span>
-            </pre>                   
-        </div>
+        <div class="detail"><i class="fa-solid fa-phone"></i>6---------</div>
+        <div class="detail"><i class="fa-solid fa-envelope"></i>abhigyanborah648@gmail.com</div>
+        <div class="detail"><i class="fa-brands fa-github"></i>paul_borah</div>
     </section>
+
+    <footer>
+        <p>&copy; 2026 Abhigyan borah , All right reserved</p>
+    </footer>
     <script src="portfolio.js"></script>
 </body>
-
 </html>
